@@ -1,5 +1,8 @@
 ﻿using System;
-
+using System.Collections.Generic;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
 using UIKit;
 
 namespace XamarinIOSCrash
@@ -21,6 +24,13 @@ namespace XamarinIOSCrash
         {
             base.DidReceiveMemoryWarning();
             // Release any cached data, images, etc that aren't in use.
+        }
+
+        partial void UIButton3_TouchUpInside(UIButton sender)
+        {
+            Crashes.Enabled = true;
+
+            Crashes.GenerateTestCrash();
         }
     }
 }

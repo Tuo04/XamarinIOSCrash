@@ -1,5 +1,10 @@
 ﻿using Foundation;
 using UIKit;
+using Microsoft.Azure.Mobile;
+using Microsoft.Azure.Mobile.Analytics;
+using Microsoft.Azure.Mobile.Crashes;
+
+using Xamarin;
 
 namespace XamarinIOSCrash
 {
@@ -25,6 +30,8 @@ namespace XamarinIOSCrash
 #if ENABLE_TEST_CLOUD
 			Xamarin.Calabash.Start();
 #endif
+			MobileCenter.Start("542a869a-b145-4e06-b96b-50a2ef39a159",
+				   typeof(Analytics), typeof(Crashes));
 
             return true;
         }
