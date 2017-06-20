@@ -26,13 +26,13 @@ namespace XamarinIOSCrash
             // Override point for customization after application launch.
             // If not required for your application you can safely delete this method
 
-            // Code to start the Xamarin Test Cloud Agent
+            // Code to start the Xamarin Test ClÍoud Agent
 #if ENABLE_TEST_CLOUD
 			Xamarin.Calabash.Start();
 #endif
             MobileCenter.LogLevel = LogLevel.Verbose;
             MobileCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
-			MobileCenter.Start("c4b83a37-837e-4b43-87e3-467a2cd02506",
+			MobileCenter.Start("486c9f32-2175-4377-bbdf-0ce1e09fe754",
 				   typeof(Analytics), typeof(Crashes));
 
             return true;
