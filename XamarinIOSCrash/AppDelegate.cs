@@ -31,7 +31,7 @@ namespace XamarinIOSCrash
 			Xamarin.Calabash.Start();
 #endif
             MobileCenter.LogLevel = LogLevel.Verbose;
-			MobileCenter.Start("00b1ad43-6f79-42ec-9417-f32ca8a774c8",
+			MobileCenter.Start("486c9f32-2175-4377-bbdf-0ce1e09fe754",
 				   typeof(Analytics), typeof(Crashes));
 
             return true;
