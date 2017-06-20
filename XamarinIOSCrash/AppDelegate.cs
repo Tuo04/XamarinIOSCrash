@@ -30,7 +30,8 @@ namespace XamarinIOSCrash
 #if ENABLE_TEST_CLOUD
 			Xamarin.Calabash.Start();
 #endif
-			MobileCenter.Start("542a869a-b145-4e06-b96b-50a2ef39a159",
+            MobileCenter.LogLevel = LogLevel.Verbose;
+			MobileCenter.Start("00b1ad43-6f79-42ec-9417-f32ca8a774c8",
 				   typeof(Analytics), typeof(Crashes));
 
             return true;
