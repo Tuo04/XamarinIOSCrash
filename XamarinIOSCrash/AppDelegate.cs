@@ -31,6 +31,7 @@ namespace XamarinIOSCrash
 			Xamarin.Calabash.Start();
 #endif
             MobileCenter.LogLevel = LogLevel.Verbose;
+            MobileCenter.SetLogUrl("https://in-staging-south-centralus.staging.avalanch.es");
 			MobileCenter.Start("486c9f32-2175-4377-bbdf-0ce1e09fe754",
 				   typeof(Analytics), typeof(Crashes));
 
